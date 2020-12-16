@@ -30,13 +30,13 @@ public class MainFrame extends JFrame{
     public Double formula1(Double x, Double y, Double z) {
         if (log(x*x) + sin(PI*y*y) < 0)	{
             JOptionPane.showMessageDialog(MainFrame.this,
-                    "log(x*x) + sin(PI*y*y) не может быть меньше или равен 0", "" +
+                    "log(x*x) + sin(PI*y^2) не может быть меньше или равен 0", "" +
                             "ошибка ввода", JOptionPane.WARNING_MESSAGE);
             return 0.0;
         }
         if (sqrt(log(x*x) + sin(PI*y*y)) < 0)	{
             JOptionPane.showMessageDialog(MainFrame.this,
-                    "sqrt(log(x*x) + sin(PI*y*y)) не могут быть меньше 0", "" +
+                    "sqrt(log(x*x) + sin(PI*y^2)) не могут быть меньше 0", "" +
                             "ошибка ввода", JOptionPane.WARNING_MESSAGE);
             return 0.0;
         }
